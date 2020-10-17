@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+*,*::after,*::before{
+	margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+	font-size:62.5%;
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+.container{
+	min-height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.game-layout{
+	position:relative;
+	border: 1px solid black;
+	height:40rem;
+	width: 80rem;
+	background-color:#BDE6FF;
+}
+
+.game-over{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 5;
+	//display: flex;
+	flex-direction: column;
+	padding: 4rem;
+	
+	h1{
+		text-align: center;
+		color: white;
+		font-size: 4rem;
+	}
+	img{
+		margin: 0 auto;
+	}
+	button{
+		font-family: 'Quicksand', sans-serif;
+		width: 15rem;
+		font-size: 4rem;
+		background-color: black;
+		border: none;
+		color: white;
+		cursor: pointer;
+	}
+}
+
+.obstacle{
+	position:absolute;
+	width:4rem;
+	height:8rem;
+	right:2rem;
+	bottom:4rem;
+	background-image: url(../images/harpoon.svg);
+	background-repeat: no-repeat;
+}
+
+.shark{
+	position: absolute;	
+	height:7rem;
+	width:15rem;
+	left:4rem;
+	bottom: 4rem;
+	background-image: url(../images/shark.svg);
+	background-repeat: no-repeat;
+}
+
+.score{
+	position: absolute;
+	top: 1rem;
+	right: 2rem;
+	font-size: 3rem;
+}
